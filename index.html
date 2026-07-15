@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineLog | Personal Movie Review Journal</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <div class="ambient ambient-one"></div>
+      <div class="ambient ambient-two"></div>
+
+      <div class="page">
+        <header class="site-header">
+          <div>
+            <div class="eyebrow">
+              <span class="brand-mark">CL</span>
+              <span>Cinema Journal</span>
+            </div>
+            <h1>CineLog <span>/ Personal Review Dashboard</span></h1>
+            <p>Log, review, and catalog your favorite movies. Keep a beautiful record of every cinematic masterpiece you watch.</p>
+          </div>
+          <button type="button" id="reset-seeds-btn" class="ghost-button">Restore Defaults</button>
+        </header>
+
+        <div class="workspace">
+          <aside class="sidebar">
+            <section class="panel" id="form-container"></section>
+            <section class="panel advice-panel">
+              <p class="section-kicker">Journal Prompt</p>
+              <h2>What stayed with you?</h2>
+              <p>Write down the image, line, performance, or feeling you still remember after the credits. A good review starts with one honest detail.</p>
+            </section>
+          </aside>
+
+          <main class="content">
+            <section id="stats-container" class="stats-grid"></section>
+            <section id="filter-container" class="panel"></section>
+            <section id="grid-container"></section>
+          </main>
+        </div>
+
+        <footer class="site-footer">
+          <span>&copy; 2026 CineLog. Personal Movie Journal.</span>
+          <span>Static HTML, CSS, and JavaScript</span>
+        </footer>
+      </div>
+
+      <div id="modal-container" class="hidden"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
